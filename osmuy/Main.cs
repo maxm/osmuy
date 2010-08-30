@@ -523,7 +523,7 @@ namespace osmuy
 					AddTag(wayEl, "name", PrettifyName(name));
 					AddTag(wayEl, "highway", name.Contains("PEATONAL") || name.Contains("PNAL")? "footway" : "residential");
 					AddTag(wayEl, "source", "http://intgis.montevideo.gub.uy");
-					AddTag(wayEl, "source:ref", calle.Key);
+					AddTag(wayEl, "mvdgis:cod_nombre", calle.Key);
 					if(way.OneWay)
 					{
 						AddTag(wayEl, "oneway", "yes");
